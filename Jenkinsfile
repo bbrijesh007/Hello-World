@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     credentialsId: 'ssh-git',
                     url: 'git@github.com:bbrijesh007/Hello-World.git'
             }
